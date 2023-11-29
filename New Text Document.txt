@@ -1,0 +1,54 @@
+git --version
+
+clear
+
+git config --global user.name "derkaiser007"
+git config --global user.email "nirajshrivastav01@gmail.com"
+
+git config --list
+
+git clone https://github.com/derkaiser007/repo01.git
+
+////cd-change directory////
+cd repo01
+
+ls
+ls -a
+
+untracked
+modified
+staged
+unmodified
+
+git add index.html
+git add README.md
+git add .
+
+git status
+
+git commit -m "added new html file and modified another one"
+
+git push origin main
+
+cd ..
+
+---Make New Directory repo02---
+mkdir repo02
+
+cd repo02
+
+git init
+
+git add .
+
+git commit -m "Add initial files"
+
+git remote add origin https://github.com/derkaiser007/repo02.git
+
+git remote -v
+
+git branch
+If branch is not main branch then: git branch -M main
+
+git push -u origin main
+git push
